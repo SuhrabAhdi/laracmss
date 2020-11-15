@@ -6,8 +6,7 @@ use Illuminate\Http\Request;
 
 class HelloController extends Controller
 {
- public function index(){
-
-    return view("hello");
+ public function index(Request $request){
+    return view("hello",['name'=>$name]);  
  }
 }
