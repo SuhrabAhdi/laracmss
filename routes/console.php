@@ -16,3 +16,7 @@ use Illuminate\Foundation\Inspiring;
 Artisan::command('inspire', function () {
     $this->comment(Inspiring::quote());
 })->describe('Display an inspiring quote');
+
+Artisan::command('miley', function () {
+    $this->info("Informationa bout milestone");
+})->describe('Display an important message about milestone');
