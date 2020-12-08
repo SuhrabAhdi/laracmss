@@ -36,3 +36,9 @@ Route::get('/', function () {
 // ]
 // );
 
+// Route::get('customers', function () {
+//     $faker = Faker\Factory::create();
+//    dd($faker->company);
+
+// });
+
