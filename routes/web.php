@@ -42,3 +42,22 @@ Route::get('/', function () {
 
 // });
 
+// Route::get('/blade/{name?}','BladeController@index')->name('home');
+// Route::get('/about-us','BladeController@about')->name('about');
+// Route::resource('employee','EmployeeController');
+
+Route::get('/users',[
+    'uses'=>'UsersController@index',
+    'as' =>'users.index'
+]);
+
+Route::get('/register',[
+    'uses'=>'UsersController@create',
+    'as' =>'users.create'
+]);
+
+Route::post('/register',[
+    'uses'=>'UsersController@store',
+    'as' =>'users.create'
+]);
+
